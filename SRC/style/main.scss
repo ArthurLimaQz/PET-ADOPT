@@ -1,0 +1,265 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #1f2937;
+  font-size: 1.2rem;
+  .header__logo {
+    width: 4em;
+  }
+  .header__link {
+    font-size: 1em;
+    background-color: #f97415;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    color: #fff;
+  }
+}
+.adopt-section {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 4rem 0;
+}
+
+.pet-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.pet-card__info {
+  width: 30%;
+  .pet-card__name {
+    color: #f97415;
+    font-size: 3.75rem;
+    font-weight: 700;
+  }
+  .pet-card__description {
+    font-size: 1.5rem;
+  }
+}
+
+.pet-card__image-container {
+  min-width: 750px;
+  display: flex;
+  .pet-card__image {
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 100ms ease-in;
+  }
+  .pet-card__image:hover {
+    transform: scale(1.03);
+  }
+}
+
+.pet-gallery {
+  width: 80%;
+  margin: auto;
+}
+.pet-gallery__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.pet-gallery__item {
+  list-style-type: none;
+}
+.pet-gallery__link {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  .pet-gallery__image {
+    object-fit: cover;
+    transform: scale(1);
+    transition: transform 200ms ease-in-out;
+  }
+}
+.pet-gallery__image:hover {
+  transform: scale(1.1);
+}
+
+.adopt-form {
+  background-color: #f59f0a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+.adopt-form__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  .adopt-form__title {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .adopt-form__subtitle {
+    font-size: 2rem;
+    width: 80%;
+    text-align: center;
+  }
+}
+
+.adopt-form__form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 20%;
+}
+.adopt-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  .adopt-form__label {
+    font-size: 2rem;
+    color: #fff;
+  }
+}
+.adopt-form__options {
+  display: flex;
+  gap: 1rem;
+  .adopt-form___option {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.adopt-form__input {
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+.adopt-form__actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0;
+  .adopt-form__button {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #f97415;
+    cursor: pointer;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+  }
+}
+.footer {
+  background-color: #4b5563;
+}
+.footer__content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.footer__about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  .footer__text {
+    width: 80%;
+  }
+}
+.footer__social {
+  display: flex;
+  gap: 1rem;
+  .footer__social-link {
+    display: flex;
+  }
+}
+.footer-copy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  color: #fff;
+  text-align: center;
+}
+
+@media (min-width: 201px) and (max-width: 500px) {
+  .adopt-section {
+    padding: 0;
+  }
+  .pet-card {
+    flex-direction: column-reverse;
+    gap: 2rem;
+
+    .pet-card__info {
+      width: 80%;
+      margin: auto;
+    }
+  }
+  .pet-card__image-container {
+    min-width: 380px;
+    padding: 1rem;
+  }
+  .pet-gallery {
+    width: 100%;
+    background-color: #2c2e96;
+    padding: 2rem 0;
+  }
+  .pet-gallery__list {
+    flex-wrap: wrap;
+  }
+  .adopt-form__subtitle {
+    display: none;
+  }
+  .adopt-form__intro {
+    text-align: center;
+  }
+  .adopt-form__form {
+    width: 80%;
+    margin: auto;
+  }
+  .adopt-form__actions {
+    .adopt-form__button {
+      font-size: 1.5rem;
+    }
+  }
+  .footer__text {
+    display: none;
+  }
+}
+@media (min-width: 501px) and (max-width: 900px) {
+  .pet-card {
+    flex-direction: column-reverse;
+  }
+  .pet-card__info {
+    width: 80%;
+    margin: auto;
+  }
+  .adopt-form__form {
+    width: 80%;
+    margin: auto;
+  }
+  .footer__content{
+    padding: 0 1rem;
+  }
+}

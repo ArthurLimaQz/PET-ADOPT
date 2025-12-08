@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Arthur Queiroz">
+    <meta name="description" content="adoção de pets">
+    <link rel="stylesheet" href="/SRC/global/reset.css">
+    <link rel="stylesheet" href="/SRC/style/main.css">
+
+    <title>Pet Adopt</title>
+</head>
+
+<body>
+    <header class="header">
+        <img class="header__logo" src="/SRC/assets/image/Logo.png" alt="Logo da PET ADOPT">
+        <a class="header__link" href="#">Adote</a>
+    </header>
+    <main>
+        <section class="adopt-section">
+            <div class="pet-card">
+                <div class="pet-card__info">
+                    <h1 class="pet-card__name" id="nome_animal">Scooby</h1>
+                    <p class="pet-card__description" id="description_animal">
+                        Scooby é um cão leal e protetor. Ama crianças e é muito obediente.
+                        Precisa de espaço para correr e brincar. Ideal para famílias ativas.
+                    </p>
+                </div>
+
+                <div class="pet-card__image-container">
+                    <img class="pet-card__image" src="/SRC/assets/image/scooby.png" alt="Imagem do animal" id="img_animal">
+                </div>
+            </div>
+            <div class="pet-gallery">
+                <ul class="pet-gallery__list">
+                    <li class="pet-gallery__item">
+                        <button class="pet-gallery__link" type="button" onclick="selecaoAnimal('scooby')" >
+                            <img class="pet-gallery__image" src="/SRC/assets/image/scooby.png"
+                                alt="Imagem do cachorro rafeiro" id="scooby">
+                        </button>
+                    </li>
+
+                    <li class="pet-gallery__item">
+                        <button class="pet-gallery__link" type="button" onclick="selecaoAnimal('gatoPreto')">
+                            <img class="pet-gallery__image" src="/SRC/assets/image/pantera.png"
+                                alt="Imagem do gato preto" id="gatoPreto">
+                        </button>
+                    </li>
+
+                    <li class="pet-gallery__item">
+                        <button class="pet-gallery__link" type="button" onclick="selecaoAnimal('caramelo')">
+                            <img class="pet-gallery__image" src="/SRC/assets/image/thor.png"
+                                alt="Imagem do cachorro caramelo" id="caramelo">
+                        </button>
+                    </li>
+
+                    <li class="pet-gallery__item">
+                        <button class="pet-gallery__link" type="button" onclick="selecaoAnimal('garfield')">
+                            <img class="pet-gallery__image" src="/SRC/assets/image/garfield.png"
+                                alt="Imagem do gato laranja" id="garfield">
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+        <section class="adopt-form">
+            <div class="adopt-form__intro">
+                <h2 class="adopt-form__title">Pronto para transformar uma vida?</h2>
+                <p class="adopt-form__subtitle">
+                    Junte-se a centenas de famílias que já encontraram seus melhores amigos através do PetAdopt.
+                </p>
+            </div>
+
+            <form class="adopt-form__form">
+                <div class="adopt-form__field">
+                    <label class="adopt-form__label" for="nome">Nome:</label>
+                    <input class="adopt-form__input" type="text" placeholder="Escreva seu nome" id="nome">
+                </div>
+
+                <div class="adopt-form__field">
+                    <label class="adopt-form__label" for="pessoa">Telefone:</label>
+                    <input class="adopt-form__input" type="text" placeholder="(xx) xxxxx-xxxx" id="pessoa">
+                </div>
+
+                <div class="adopt-form__field">
+                    <label class="adopt-form__label" for="email">E-mail:</label>
+                    <input class="adopt-form__input" type="text" placeholder="seuemail@exemplo.com" id="email">
+                </div>
+
+                <div class="adopt-form__field">
+                    <p class="adopt-form__label">Animal escolhido:</p>
+                    <div class="adopt-form__options">
+                        <div class="adopt-form___option">
+                            <input class="adopt-form__radio" type="radio" name="animal" id="cachorro">
+                            <label class="adopt-form__label" for="cachorro">Cachorro</label>
+                        </div>
+
+                        <div class="adopt-form___option">
+                            <input class="adopt-form__radio" type="radio" name="animal" id="gato">
+                            <label class="adopt-form__label" for="gato">Gato</label>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="adopt-form__field">
+                    <label class="adopt-form__label" for="nome_animal">Nome do Animal:</label>
+                    <input class="adopt-form__input" type="text"
+                        placeholder="Escreva o nome do animal que você quer adotar" id="nome_animal">
+                </div>
+                <div class="adopt-form__actions">
+                    <input class="adopt-form__button" type="button" value="Comece Sua Jornada">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="footer__content">
+            <div class="footer__logo">
+                <img class="footer__logo-image" src="/SRC/assets/image/Logo.png" alt="Logo da Pet Adopt">
+            </div>
+
+            <div class="footer__about">
+                <p class="footer__text">
+                    Nossa missão é conectar pets abandonados com famílias amorosas,
+                    transformando vidas através do amor incondicional.
+                </p>
+            </div>
+
+            <div class="footer__social">
+                <a class="footer__social-link" href="#">
+                    <img class="footer__social-icon" src="/SRC/assets/image/facebook.png" alt="Ícone Facebook">
+                </a>
+
+                <a class="footer__social-link" href="#">
+                    <img class="footer__social-icon" src="/SRC/assets/image/instagram.png" alt="Ícone Instagram">
+                </a>
+            </div>
+        </section>
+        <section class="footer-copy">
+            <p class="footer-copy__text">
+                © 2025 PetAdopt. Desenvolvido com ❤️ para ajudar nossos amigos peludinhos.
+            </p>
+        </section>
+    </footer>
+
+    <script src="/SRC/JS/index.js"></script>
+</body>
+
+</html>
