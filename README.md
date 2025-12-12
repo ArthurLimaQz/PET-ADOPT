@@ -1,96 +1,105 @@
 # 🐾 PET-ADOPT
 
-**PET-ADOPT** é uma aplicação web criada para simular uma plataforma de **adoção de pets**, permitindo que usuários explorem animais disponíveis para adoção por meio de uma interface moderna e responsiva.
+**PET-ADOPT** é uma aplicação web **frontend** desenvolvida para simular uma plataforma moderna e responsiva de adoção de pets. O projeto foca em **UI/UX**, permitindo que os usuários explorem animais fictícios disponíveis para adoção por meio de uma interface agradável e intuitiva.
 
-🔗 **Demo:** https://pet-adopt-nine.vercel.app  
-🔗 **Repositório:** https://github.com/ArthurLimaQz/PET-ADOPT
+| Tipo | Status |
+| :--- | :--- |
+| **Status** | Concluído (Foco Front-end) |
+| **Linguagem Principal** | JavaScript (Vanilla) |
+| **Demo** | 🔗 [https://pet-adopt-nine.vercel.app](https://pet-adopt-nine.vercel.app) |
+| **Repositório** | 🔗 [GitHub - ArthurLimaQz/PET-ADOPT](https://github.com/ArthurLimaQz/PET-ADOPT) |
 
 ---
 
 ## 📌 Sobre o Projeto
 
-O PET-ADOPT foi desenvolvido como um projeto frontend para praticar HTML, CSS/SCSS e JavaScript, com foco em UI/UX.  
-Ele apresenta páginas navegáveis, animações e uma estrutura visual agradável para demonstrar pets fictícios disponíveis para adoção.
+Este projeto foi construído primariamente para **praticar e consolidar conhecimentos** em **HTML, CSS/SCSS e JavaScript (Vanilla)**. O desenvolvimento priorizou a criação de uma experiência de usuário rica, incluindo:
 
----
+* Páginas navegáveis.
+* Animações sutis.
+* Um **Design Responsivo** robusto.
 
-## 🛠️ Funcionalidades
-
-- ✔️ Listagem de pets disponíveis  
-- ✔️ Design responsivo  
-- ✔️ Navegação entre páginas com JavaScript  
-- ✔️ Interface intuitiva e amigável  
-- ✔️ Estrutura modular com organização clara de arquivos  
-
-> **Nota:** Este projeto não possui backend; trata-se de uma aplicação estática com foco em front-end.
-
----
-
-## 📂 Estrutura do Projeto
-
-PET-ADOPT/
-├── index.html
-├── SRC/
-│ ├── css/
-│ ├── js/
-│ └── assets/
-├── .gitignore
-└── README.md
-
+> **Importante:** O PET-ADOPT é uma aplicação puramente **estática (Front-end)**. Ele não possui um backend nem persiste dados, simulando a listagem de pets através de dados hard-coded para fins demonstrativos.
 
 ---
 
 ## 🚀 Tecnologias Utilizadas
 
-- **HTML5**
-- **CSS3 / SCSS**
-- **JavaScript (Vanilla)**
-- **Vercel** (deploy)
+| Categoria | Tecnologia | Uso Principal |
+| :--- | :--- | :--- |
+| **Estrutura** | **HTML5** | Marcação Semântica. |
+| **Estilização** | **CSS3 / SCSS** | Estilos modulares e pré-processamento. |
+| **Interatividade** | **JavaScript (Vanilla)** | Manipulação do DOM e navegação. |
+| **Implantação** | **Vercel** | Hospedagem e Deploy Contínuo. |
+
+---
+
+## 🛠️ Funcionalidades Implementadas
+
+O projeto inclui as seguintes funcionalidades:
+
+* ✔️ **Listagem de Pets** disponíveis.
+* ✔️ **Design Responsivo** completo (Mobile First).
+* ✔️ **Navegação Dinâmica** entre páginas usando JavaScript.
+* ✔️ **Interface Intuitiva** e visualmente agradável (Foco em UI/UX).
+* ✔️ Estrutura de arquivos **modular** e organizada.
+
+---
+
+## 📂 Estrutura do Projeto
+
+PET-ADOPT/ ├── index.html # Página principal ├── SRC/ │ ├── css/ # Arquivos SCSS/CSS │ ├── js/ # Lógica JavaScript (Vanilla) │ └── assets/ # Imagens e mídia ├── .gitignore └── README.md
 
 ---
 
 ## 🧪 Como Executar Localmente
 
-1. Clone o repositório:
+Siga os passos abaixo para rodar a aplicação em sua máquina:
 
-```bash
-git clone https://github.com/ArthurLimaQz/PET-ADOPT.git
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/ArthurLimaQz/PET-ADOPT.git](https://github.com/ArthurLimaQz/PET-ADOPT.git)
+    ```
 
-cd PET-ADOPT
+2.  **Acesse o diretório do projeto:**
+    ```bash
+    cd PET-ADOPT
+    ```
 
-3. Execute abrindo o index.html no navegador
-ou utilizando uma extensão como Live Server no VS Code.
+3.  **Execute a aplicação:**
+    * Simplesmente abra o arquivo `index.html` em seu navegador.
+    * **Alternativa Recomendada:** Use a extensão **Live Server** (VS Code) para um ambiente de desenvolvimento mais eficiente.
 
-💡 Melhorias Futuras
+---
 
-🔧 Adicionar backend (Node.js, Django, Spring, etc.)
+## 💡 Melhorias Futuras
 
-🔧 Banco de dados para cadastro real de pets
+O projeto pode ser expandido significativamente com a adição de um backend. Planejamentos futuros incluem:
 
-🔧 Sistema de cadastro/login
+* 🔧 **Adicionar Backend** (ex: Node.js, Django, Spring, etc.).
+* 🔧 Implementar **Banco de Dados** para cadastro real de pets.
+* 🔧 Desenvolver um **Sistema de Autenticação** (Cadastro/Login).
+* 🔧 Adicionar **Filtros Avançados** por espécie, idade, porte, etc.
+* 🔧 Criar um **CRUD Completo** para gerenciamento de pets.
+* 🔧 Desenvolver a **Página de Adoção** com formulário funcional.
 
-🔧 Filtros por espécie, idade, porte, etc.
+---
 
-🔧 CRUD completo para gerenciamento de pets
+## 🤝 Contribuições
 
-🔧 Página de adoção com formulário real
+Contribuições são **muito bem-vindas**! Se você tem uma ideia de melhoria ou correção, sinta-se à vontade para contribuir:
 
-🤝 Contribuições
-
-Contribuições são bem-vindas!
-
-Faça um fork do projeto
-
-Crie uma nova branch:
-
-git checkout -b feature/sua-feature
-
-Commit suas alterações:
-
-git commit -m "feat: descrição da mudança"
-
-Envie para o GitHub:
-
-git push origin feature/sua-feature
-
-Abra um Pull Request ✨
+1.  Faça um **Fork** do projeto.
+2.  Crie uma nova *branch* para sua funcionalidade:
+    ```bash
+    git checkout -b feature/sua-feature
+    ```
+3.  Commit suas alterações com uma mensagem clara e concisa:
+    ```bash
+    git commit -m "feat: [Descrição sucinta da mudança]"
+    ```
+4.  Envie para o seu repositório *forked*:
+    ```bash
+    git push origin feature/sua-feature
+    ```
+5.  Abra um **Pull Request** no repositório original! ✨
